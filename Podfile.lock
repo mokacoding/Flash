@@ -1,0 +1,10 @@
+PODS:
+  - Quick (0.8.0)
+
+DEPENDENCIES:
+  - Quick
+
+SPEC CHECKSUMS:
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+
+COCOAPODS: 0.39.0

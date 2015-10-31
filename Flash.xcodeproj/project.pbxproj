@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20004694971D763C5FCBE220 /* Pods_FlashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7A765FC56F022E2F665B2A /* Pods_FlashTests.framework */; };
 		3F473D801BE46A7C00572B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F473D7F1BE46A7C00572B19 /* AppDelegate.swift */; };
 		3F473D821BE46A7C00572B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F473D811BE46A7C00572B19 /* ViewController.swift */; };
 		3F473D851BE46A7C00572B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F473D831BE46A7C00572B19 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 		3F473D8B1BE46A7C00572B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F473D901BE46A7C00572B19 /* FlashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F473D961BE46A7C00572B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EDCC034A448D1D0A99A6C5D /* Pods-FlashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashTests/Pods-FlashTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2436776C8AB9FB49CB928DB /* Pods-FlashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashTests/Pods-FlashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD7A765FC56F022E2F665B2A /* Pods_FlashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20004694971D763C5FCBE220 /* Pods_FlashTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 				3F473D7E1BE46A7C00572B19 /* Flash */,
 				3F473D931BE46A7C00572B19 /* FlashTests */,
 				3F473D7D1BE46A7C00572B19 /* Products */,
+				54F288143A73557537CA67E7 /* Pods */,
+				9201ED673B81E7171BF102F7 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -96,6 +103,23 @@
 			path = FlashTests;
 			sourceTree = "<group>";
 		};
+		54F288143A73557537CA67E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2436776C8AB9FB49CB928DB /* Pods-FlashTests.debug.xcconfig */,
+				5EDCC034A448D1D0A99A6C5D /* Pods-FlashTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9201ED673B81E7171BF102F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A765FC56F022E2F665B2A /* Pods_FlashTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F473D9C1BE46A7C00572B19 /* Build configuration list for PBXNativeTarget "FlashTests" */;
 			buildPhases = (
+				D8A20F10CCF2F4CEECE6AFD9 /* Check Pods Manifest.lock */,
 				3F473D8C1BE46A7C00572B19 /* Sources */,
 				3F473D8D1BE46A7C00572B19 /* Frameworks */,
 				3F473D8E1BE46A7C00572B19 /* Resources */,
+				F7C9F2D2D448C9BFE71DAA59 /* Embed Pods Frameworks */,
+				8A07B8BF74371DF8A6E6BBDE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +222,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8A07B8BF74371DF8A6E6BBDE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashTests/Pods-FlashTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		903BB7D3A621B60CE483A176 /* Set version number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +264,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		D8A20F10CCF2F4CEECE6AFD9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C9F2D2D448C9BFE71DAA59 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashTests/Pods-FlashTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -412,20 +484,25 @@
 		};
 		3F473D9D1BE46A7C00572B19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2436776C8AB9FB49CB928DB /* Pods-FlashTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FlashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mokacoding.FlashTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flash.app/Flash";
 			};
 			name = Debug;
 		};
 		3F473D9E1BE46A7C00572B19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EDCC034A448D1D0A99A6C5D /* Pods-FlashTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FlashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mokacoding.FlashTests;
